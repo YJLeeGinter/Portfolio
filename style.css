@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Playfair_Display";
+  src: url(Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+:root{
+  --bs-body-font-family: "Poppins";
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+}
+
+#myBtn:hover {
+  opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+.container.nav-container{
+  align-items: flex-end;
+ }
+}
+
+.container.nav-container .navbar-nav{
+  gap: 1em;
+}
+
+.hero-heading, .about-heading, .skills-heading, .work-heading, .contact-heading{
+  font-family: "Playfair_Display";
+}
+
+.heading-bg-color{
+  background-color: #F5F5F5;
+
+}
+
+.about-heading, .skills-heading, .work-heading, .about-image-container{
+  background-color: #F5F5F5;
+}
+
+.hero-heading, .about-heading, .skills-heading, .work-heading{
+  letter-spacing: 1px;
+}
+.contact-heading{
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+
+.hero-section{
+  height: 100vh;
+  background-size: cover;
+  background-image: url(main-images/hero-image.jpg);
+}
+.navbar-brand, .navbar{
+  padding: 0;
+}
+
+@media (max-width: 991px) {
+  .skills-title-container, .work-title-container{
+    padding: 0;
+  }
+}
+
+.navbar-inner{
+  background: transparent;
+}
+
+.navbar-toggler{
+  border: none;
+}
+
+.btn, input.form-control, textarea.form-control{
+  border-radius: 0;
+}
+
+.btn{
+  letter-spacing: 1px;
+}
+
+.contact-title-area{
+  min-height: 300px;
+  background-color: #F5F5F5;
+}
+
+.testimonial-icon{
+  width: 10%;
+  height: auto;
+}
+
+.carousel-item{
+  height: 900px;
+}
+
+@media (max-width: 576px) {
+  .about-container{
+    padding: 0;
+  }
+
+}
+
+@media (min-width: 577px) {
+  .carousel-control-prev{
+    justify-content: flex-start;
+  }
+  
+  .carousel-control-next{
+    justify-content: flex-end;
+  }
+  
+}
+
+@media (min-width: 768px) {
+  .carousel-item{
+    height: 700px;
+  }
+}
+
+@media (max-width: 991px) {
+  .work-col-odd, .work-col-even{
+    border-bottom: 1px solid #dee2e6;;
+  }
+  
+   
+}
+
+@media (min-width: 992px) {
+  .hero-section{
+    height: 100vh;
+  }
+
+  .contact-form-container{
+    border-top: 5px solid #F5F5F5;
+    border-bottom: 5px solid #F5F5F5;
+  }
+  
+  .work-col-even, .work-col-odd{
+    position: relative;
+  }
+
+  .work-col-odd::before{
+    content: '';
+    height: 60%; 
+    width: 1px;
+    position: absolute;
+    left: 0;
+    top: 10; 
+    background-color: #dee2e6; 
+    }
+
+  .work-col-even::before{
+  content: '';
+  height: 60%; 
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 10; 
+  background-color: #dee2e6; 
+  }
+  
+  
+  .about-text{
+    border-right: 3px solid #F5F5F5 ;
+  }
+
+  .hero-text-container{
+    height: 50vh;
+  }
+  
+  .contact-heading{
+    width: 60%;
+  }
+
+  .contact-title-area{
+    min-height: 70vh;
+  }
+
+  .contact-form{
+    width: 75%;
+  }
+
+  .testimonial-icon{
+    width: 5%;
+    height: auto;
+  }
+
+  .carousel-item{
+    height: 600px;
+  }
+
+}
+
+.navbar > .container.view-more-navbar{
+  justify-content: flex-start;
+  align-items: flex-end;
+  
+}
+
+.testimonial-icon-right, .testimonial-icon-left{
+  position: relative;
+}
+
+.testimonial-icon-left:before, .testimonial-icon-right:before {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 5px;
+  background: #F5F5F5;
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+
+.testimonial-icon-left:after, .testimonial-icon-right:after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 5px;
+  background: #F5F5F5;
+  right: 0;
+  top: 50%;
+  position: absolute;
+}
+
+.hero-section{
+  padding-top: 10rem;
+}
+
+
+
+.carousel-control-prev-icon{
+  background-image: url(main-images/previous-btn.png);
+}
+
+.carousel-control-next-icon{
+  background-image: url(main-images/next-btn.png);
+}
+
+.form-control:focus{
+  border-color: #F5F5F5;
+  box-shadow: rgba(202, 202, 202, 0.25) 0px 0px 0px 0.25rem;
+}
+
